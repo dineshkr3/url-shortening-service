@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  mongodb_container:
+    image: mongo:latest
+
+    ports:
+      - 27017:27017
+  url_shortening_service_container:
+    image: url-shortening-service:latest
+    depends_on:
+      - 'mongodb_container'
+    ports:
+      - 8085:8085
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongodb_container:27017/url_db

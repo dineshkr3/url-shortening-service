@@ -1,0 +1,16 @@
+
+server:
+  port: 8085
+
+
+counter_range:
+  start: 5000
+  end: 10000
+
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+  data:
+    mongodb:
+      uri: "mongodb://localhost:27017/url_db"
