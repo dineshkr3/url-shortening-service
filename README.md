@@ -41,3 +41,11 @@ $ docker-compose stop
 $ docker-compose rm
 ```
 
+### Test
+
+UrlShorteningServiceApplicationTest class contains the test case to validate working application.
+
+### Swagger UI
+http://localhost:8085/swagger-ui/index.html
+
+Swagger UI can be accessed once deployed as mentioned above.
