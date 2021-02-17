@@ -33,6 +33,9 @@ $ cd docker
 $ docker-compose up -d
 
 ```
+#### Deployment on Kubernetes
+Once image is pushed to artifactory then we can use Helm Charts to deploy on to Kubernetes.
+
 #### Undeploy
 For production environments...
 
